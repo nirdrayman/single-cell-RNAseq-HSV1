@@ -3,9 +3,10 @@ Analysis files accompanying eLife paper entitle "Single cell analysis of HSV-1 i
 
 This repository contains the Matlab code used to analyze and generate the images for the single-cell anlyses in the paper.
 Files contained are:
-1. Files_for_analysis_intitation.mat : this matlab files contains the raw data from sequencing of the three samples (mock_orig, wt_orig ad do_orig), the gene names (names_mock, names_wt and names_d0) and "colors" - used for coloring the plots. the mock_orig, wt_orig and d0_orig are DGE (digital gene expression) matrices. each row is a gene and is coloum is a cell. the names_mock, names_wt and names_d0 are arrays holding the names of the genes (=rows) for each corresponding matrix. mock are mock-infected cells, wt are wild-type HSV-1 infected cells and d0 are deltaICP0 HSV-1 infected cells.
-2. a folder named distributionPlot. This is a function for creating violin plots. Please note it was authored by Jonas and was obatained from: https://www.mathworks.com/matlabcentral/fileexchange/23661-violin-plots-for-plotting-multiple-distributions-distributionplot-m. 
-3. a folder named kakearney-boundedline-pkg-8179f9a. This is a function to create shaded lines. Please note is was authored by Kelly Kearney and was obtained from https://www.mathworks.com/matlabcentral/fileexchange/27485-boundedline-m.
+1. scRNAseq_analysis_final_042519_for_Github.m : this is a matlab code file that will run all the analyses and procude the figures from the paper. It was constructed and used in MATLAB2018a version.
+2. Files_for_analysis_intitation.mat : this matlab files contains the raw data from sequencing of the three samples (mock_orig, wt_orig ad do_orig), the gene names (names_mock, names_wt and names_d0) and "colors" - used for coloring the plots. the mock_orig, wt_orig and d0_orig are DGE (digital gene expression) matrices. each row is a gene and is coloum is a cell. the names_mock, names_wt and names_d0 are arrays holding the names of the genes (=rows) for each corresponding matrix. mock are mock-infected cells, wt are wild-type HSV-1 infected cells and d0 are deltaICP0 HSV-1 infected cells.
+3. a folder named distributionPlot. This is a function for creating violin plots. Please note it was authored by Jonas and was obatained from: https://www.mathworks.com/matlabcentral/fileexchange/23661-violin-plots-for-plotting-multiple-distributions-distributionplot-m. 
+4. a folder named kakearney-boundedline-pkg-8179f9a. This is a function to create shaded lines. Please note is was authored by Kelly Kearney and was obtained from https://www.mathworks.com/matlabcentral/fileexchange/27485-boundedline-m.
 
 Major steps in the analysis:
 1. Pre-processing: Fileting out cells with low and high UMI and high mitochondrial gene content.
